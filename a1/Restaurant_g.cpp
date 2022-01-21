@@ -19,3 +19,7 @@ RestaurantGuide::RestaurantGuide(std::string s1, std::string s2) {
 std::string RestaurantGuide::getName() {
   return Name;
 }
+
+std::string RestaurantGuide::getCuisine() {
+  return Cuisine;
+}

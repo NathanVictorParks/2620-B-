@@ -27,3 +27,7 @@ void RestaurantGuide::setName(std::string newName) {
 std::string RestaurantGuide::getCuisine() {
   return Cuisine;
 }
+
+void RestaurantGuide::setCuisine(std::string newCusine) {
+  Cuisine = newCusine;
+}

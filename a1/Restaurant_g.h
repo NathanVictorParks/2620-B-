@@ -15,5 +15,7 @@ public:
   std::string getName();  // returns Name.
   void setName(std::string newName);  // Sets Name to newName.
   std::string getCuisine();  // returns Cuisine.
+  void setCuisine(std::string newCusine);
+   // sets Cuisine to newCusine. Not sure why he had us spell it Cusine (^.^).
 };
 #endif

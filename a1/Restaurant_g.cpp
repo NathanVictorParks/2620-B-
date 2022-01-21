@@ -20,6 +20,10 @@ std::string RestaurantGuide::getName() {
   return Name;
 }
 
+void RestaurantGuide::setName(std::string newName) {
+  Name = newName;
+}
+
 std::string RestaurantGuide::getCuisine() {
   return Cuisine;
 }

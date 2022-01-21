@@ -13,6 +13,7 @@ public:
   RestaurantGuide(std::string s1, std::string s2);
   // Intiates values in CustomerRating to 0, Name to s1 and Cuisine to s2.
   std::string getName();  // returns Name.
+  void setName(std::string newName);  // Sets Name to newName.
   std::string getCuisine();  // returns Cuisine.
 };
 #endif

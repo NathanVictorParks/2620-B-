@@ -3,5 +3,6 @@
 
 int main() {
   RestaurantGuide RG("Name", "Cuisine");
-  std::cout << RG.getCuisine();
+  RG.setName("Nathan");
+  std::cout << RG.getName();
 }

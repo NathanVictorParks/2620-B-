@@ -1,5 +1,5 @@
-#ifndef RESTAURANTGUIDE_H
-#define RESTAURANTGUIDE_H
+#ifndef RESTAURANT_G_H  // [build/header_guard]
+#define RESTAURANT_G_H  //[build/header_guard]
 #define OPTION_SIZE 5  // Size of CustomerRating.
 #include <string>
 
@@ -26,4 +26,4 @@ public:
   float getAverage();
   // Iterates through CustomerRating and calculates the average.
 };
-#endif
+#endif  // RESTAURANT_G_H [build/header_guard]

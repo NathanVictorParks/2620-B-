@@ -1,9 +1,11 @@
 #include "Restaurant_g.h"
+#include <iostream>
+#define OPTION_SIZE 5
 
 RestaurantG::RestaurantG() {
   Name = "Unkown";
   Cuisine = "Unknown";
-  for (int i = 0; i < OPTION_SIZE/*equals 5 and is defined in .h*/; i++) {
+  for (int i = 0; i < OPTION_SIZE/*equals 5*/; i++) {
     CustomerRating[i] = 0;
   }
 }
@@ -11,7 +13,7 @@ RestaurantG::RestaurantG() {
 RestaurantG::RestaurantG(std::string s1, std::string s2) {
   Name = s1;
   Cuisine = s2;
-  for (int i = 0; i < OPTION_SIZE/*equals 5 and is defined in .h*/; i++) {
+  for (int i = 0; i < OPTION_SIZE/*equals 5*/; i++) {
     CustomerRating[i] = 0;
   }
 }
@@ -34,8 +36,11 @@ void RestaurantG::setCuisine(std::string newCusine) {
 
 void RestaurantG::addCustomerRating(int num) {
   // precondition checks if given num falls within the array.
-  if (num > 0 && num < 6) {
+  if (0 < num && num <= OPTION_SIZE) {
     CustomerRating[num - 1]++;  // [num - 1] because the array starts at 0.
+  } else {
+    std::cout << "Error Rating not entered. Please choose a valid number."
+              << std::endl;
   }
 }
 

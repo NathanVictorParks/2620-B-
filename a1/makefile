@@ -7,7 +7,7 @@ CC = g++
 CFLAGS  =-std=c++11 -g -Wall
 
 # the build target executable:
-TARGET = RestaurantGuide
+TARGET = RestaurantG
 CLASS1 = Restaurant_g
 MAIN = test_RestaurantG
 

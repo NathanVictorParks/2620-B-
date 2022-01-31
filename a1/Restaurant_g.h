@@ -9,7 +9,7 @@ private:
   int CustomerRating[OPTION_SIZE];
 public:
   RestaurantG();
-  // Intiates values in CustomerRating to 0, sets Name to "" and Cuisine to "".
+  // Intiates values in CustomerRating to 0, sets Name to "Unkown" and Cuisine to "Unkown".
   RestaurantG(std::string s1, std::string s2);
   // Intiates values in CustomerRating to 0, Name to s1 and Cuisine to s2.
   std::string getName();

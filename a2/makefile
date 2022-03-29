@@ -7,9 +7,9 @@ CC = g++
 CFLAGS  =-std=c++11 -g -Wall
 
 # the build target executable:
-TARGET = RG
-CLASS1 = restaurant_g
-MAIN = test_RestaurantG
+TARGET = Matrix
+CLASS1 = Matrix
+MAIN = test_matrix
 
 all: $(TARGET)
 
